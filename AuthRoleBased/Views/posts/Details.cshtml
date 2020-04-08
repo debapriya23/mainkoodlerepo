@@ -1,0 +1,42 @@
+﻿@model KOODLE.Models.posts
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>posts</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.post_titel)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.post_titel)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.post_txt)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.post_txt)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.post_date)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.post_date)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.post_like)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.post_like)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.post_id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

@@ -14,6 +14,7 @@ namespace AuthRoleBased.Data
         {
         }
 
-        
+       public DbSet<posts> posts { get; set; }
     }
 }
+//IdentityDbContext
